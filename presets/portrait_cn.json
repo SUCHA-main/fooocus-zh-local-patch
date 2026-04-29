@@ -1,0 +1,10 @@
+{
+    "default_prompt": "clean realistic portrait, natural skin texture, soft diffused light, half-body portrait, headshot, gentle expression, clean background, detailed eyes, realistic photo",
+    "default_prompt_negative": "bad anatomy, bad hands, plastic skin, over-smoothed skin, low quality, blurry, deformed, extra fingers, extra limbs, distorted face, waxy skin, watermark, text, logo",
+    "default_styles": [
+        "Fooocus V2",
+        "Fooocus Photograph"
+    ],
+    "default_aspect_ratio": "896*1152",
+    "default_performance": "Quality"
+}

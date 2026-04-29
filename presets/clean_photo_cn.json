@@ -1,0 +1,10 @@
+{
+    "default_prompt": "clean airy portrait photo, Korean-style portrait, natural makeup, soft daylight, fresh atmosphere, clean background, natural skin texture, soft glow, elegant and realistic photo",
+    "default_prompt_negative": "bad anatomy, bad hands, low quality, blurry, plastic skin, over-smoothed skin, harsh contrast, messy background, vulgar, pornographic, explicit, watermark, text, logo",
+    "default_styles": [
+        "Fooocus V2",
+        "Fooocus Photograph"
+    ],
+    "default_aspect_ratio": "896*1152",
+    "default_performance": "Quality"
+}

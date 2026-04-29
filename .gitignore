@@ -1,0 +1,49 @@
+# Python and virtual environments
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+.env/
+
+# Fooocus large/runtime directories
+models/
+outputs/
+checkpoints/
+loras/
+controlnet/
+embeddings/
+vae/
+
+# Model and ML weight files
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.onnx
+*.gguf
+
+# Generated images and media outputs
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.mp4
+*.webm
+
+# Caches, logs, temporary files
+.cache/
+cache/
+tmp/
+temp/
+*.log
+*.tmp
+hash_cache.txt
+
+# Local Fooocus/user config
+config.txt
+config.txt.bak_*
+auth.json
+auth-*.json

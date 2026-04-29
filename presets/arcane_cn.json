@@ -1,0 +1,10 @@
+{
+    "default_prompt": "arcane-inspired portrait, painted animation frame, visible brush strokes, angular facial planes, matte skin, chiaroscuro lighting, cinematic composition, textured paint, moody atmosphere",
+    "default_prompt_negative": "bad anatomy, bad hands, low quality, blurry, flat lighting, plastic skin, over-smoothed skin, deformed, extra fingers, extra limbs, watermark, text, logo",
+    "default_styles": [
+        "Fooocus V2",
+        "Fooocus Cinematic"
+    ],
+    "default_aspect_ratio": "896*1152",
+    "default_performance": "Quality"
+}

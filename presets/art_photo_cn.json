@@ -1,0 +1,10 @@
+{
+    "default_prompt": "fine-art portrait, implied nude aesthetic, bare shoulders, collarbone, soft fabric, soft window light, tasteful composition, non-explicit, matte skin, delicate skin texture, elegant atmosphere",
+    "default_prompt_negative": "bad anatomy, bad hands, low quality, blurry, plastic skin, over-smoothed skin, vulgar, pornographic, explicit nudity, fetish, deformed, extra fingers, extra limbs, watermark, text, logo",
+    "default_styles": [
+        "Fooocus V2",
+        "Fooocus Cinematic"
+    ],
+    "default_aspect_ratio": "896*1152",
+    "default_performance": "Quality"
+}
