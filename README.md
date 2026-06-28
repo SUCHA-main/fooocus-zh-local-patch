@@ -11,7 +11,7 @@
 - 本仓库不包含生成图片、输出目录、缓存、日志或虚拟环境。
 - 使用前需要先安装 Fooocus，并确认官方启动方式可以正常运行。
 - 安装方法：将本仓库文件复制到 Fooocus 根目录，并保持目录结构不变。
-- 启动方法：在 Fooocus 根目录运行 `start-gpu-zh-cn-local.bat` 或 `start-gpu-zh-cn-fixed.bat`。
+- 启动方法：在 Fooocus 根目录运行 `start-gpu-zh-cn-local.bat`、`start-gpu-zh-cn-fixed.bat` 或 `start-gpu-zh-cn.bat`。
 - 回滚方法：只删除本仓库列出的补丁文件，然后改回 Fooocus 官方启动脚本。
 - 许可说明：本补丁以 GPL-3.0 发布，详见 `LICENSE`。
 
@@ -21,6 +21,7 @@
 - 中文语言补丁：`language/zh_cn_patch.json`。
 - 前端 UI 中文补丁：`javascript/zz_zh_cn_ui_patch.js`。
 - 可配置的 Windows 启动脚本，不写死作者本机路径。
+- `launch_zh_cn_ui_patch.py` 注入前端补丁时不再强制 CPU，保留 GPU 启动能力。
 - 自定义图标：`assets/icons/fooocus_custom.ico`。
 
 ## 安装
@@ -43,6 +44,12 @@ start-gpu-zh-cn-local.bat
 
 `FOOOCUS_URL` 只影响 `start-gpu-zh-cn-local.bat` 的自动打开浏览器逻辑。
 
+## 启动脚本区别
+
+- `start-gpu-zh-cn-local.bat`：本地使用，启动后等待服务可访问，再打开浏览器；命令行带 `--disable-in-browser`，避免 Fooocus 自己重复开浏览器。
+- `start-gpu-zh-cn-fixed.bat`：使用 `launch_zh_cn_ui_patch.py` 注入前端中文 UI 补丁，并开启 `--share`。
+- `start-gpu-zh-cn.bat`：使用官方 `launch.py` 加载 `zh_cn_patch` 语言文件，不注入额外前端 JS。
+
 ## 回滚方法
 
 删除复制到 Fooocus 根目录中的本补丁文件，然后改回 Fooocus 官方启动脚本即可。建议只删除本仓库列出的文件，不要删除 Fooocus 官方文件、模型目录或输出目录。
@@ -57,6 +64,7 @@ presets/arcane_cn.json
 language/zh_cn_patch.json
 javascript/zz_zh_cn_ui_patch.js
 launch_zh_cn_ui_patch.py
+start-gpu-zh-cn.bat
 start-gpu-zh-cn-local.bat
 start-gpu-zh-cn-fixed.bat
 LOCAL_CUSTOM_README_CN.txt

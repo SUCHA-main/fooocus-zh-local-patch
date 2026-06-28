@@ -40,5 +40,5 @@ if not exist "launch_zh_cn_ui_patch.py" (
 
 start "" powershell -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -Command "$url=$env:FOOOCUS_URL; $deadline=(Get-Date).AddSeconds(180); while((Get-Date) -lt $deadline){ try { $response=Invoke-WebRequest -UseBasicParsing -Uri $url -TimeoutSec 2; if($response.StatusCode -ge 200 -and $response.StatusCode -lt 500){ Start-Process $url; exit 0 } } catch { }; Start-Sleep -Seconds 2 }; Add-Type -AssemblyName PresentationFramework; [System.Windows.MessageBox]::Show(('Fooocus did not become reachable at ' + $url + ' within 180 seconds. Check the terminal log.'),'Fooocus startup timeout') | Out-Null"
 
-"%PYTHON_EXE%" launch_zh_cn_ui_patch.py --language zh_cn_patch --disable-preset-download
+"%PYTHON_EXE%" launch_zh_cn_ui_patch.py --language zh_cn_patch --disable-preset-download --disable-in-browser
 pause

@@ -12,6 +12,7 @@ This repository does not include model files, generated images, virtual environm
 - Chinese language patch: `language/zh_cn_patch.json`.
 - Frontend UI patch: `javascript/zz_zh_cn_ui_patch.js`.
 - Configurable Windows launch scripts without author-specific local paths.
+- `launch_zh_cn_ui_patch.py` keeps GPU startup available while injecting the frontend patch.
 - Custom icon: `assets/icons/fooocus_custom.ico`.
 
 ## Installation
@@ -19,7 +20,7 @@ This repository does not include model files, generated images, virtual environm
 1. Install Fooocus first and make sure the official launcher works.
 2. Download or clone this patch repository.
 3. Copy the files from this repository into the Fooocus root directory, preserving the folder structure.
-4. Run `start-gpu-zh-cn-local.bat` or `start-gpu-zh-cn-fixed.bat` from the Fooocus root directory.
+4. Run `start-gpu-zh-cn-local.bat`, `start-gpu-zh-cn-fixed.bat`, or `start-gpu-zh-cn.bat` from the Fooocus root directory.
 
 ## Launcher Configuration
 
@@ -33,6 +34,12 @@ start-gpu-zh-cn-local.bat
 ```
 
 `FOOOCUS_URL` only affects the browser auto-open logic in `start-gpu-zh-cn-local.bat`.
+
+## Launcher Differences
+
+- `start-gpu-zh-cn-local.bat`: for local use; it waits until the service is reachable, then opens the browser. It passes `--disable-in-browser` to avoid duplicate browser windows.
+- `start-gpu-zh-cn-fixed.bat`: uses `launch_zh_cn_ui_patch.py` to inject the frontend Chinese UI patch and enables `--share`.
+- `start-gpu-zh-cn.bat`: uses the official `launch.py` with the `zh_cn_patch` language file and does not inject the extra frontend JS.
 
 ## Rollback
 
@@ -48,6 +55,7 @@ presets/arcane_cn.json
 language/zh_cn_patch.json
 javascript/zz_zh_cn_ui_patch.js
 launch_zh_cn_ui_patch.py
+start-gpu-zh-cn.bat
 start-gpu-zh-cn-local.bat
 start-gpu-zh-cn-fixed.bat
 LOCAL_CUSTOM_README_CN.txt

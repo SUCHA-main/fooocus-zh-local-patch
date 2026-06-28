@@ -8,6 +8,7 @@ Fooocus 非官方中文本地 UI 补丁说明
 - language/zh_cn_patch.json
 - javascript/zz_zh_cn_ui_patch.js
 - launch_zh_cn_ui_patch.py
+- start-gpu-zh-cn.bat
 - start-gpu-zh-cn-local.bat
 - start-gpu-zh-cn-fixed.bat
 - assets/icons/fooocus_custom.ico
@@ -17,6 +18,7 @@ Fooocus 非官方中文本地 UI 补丁说明
 - 增加中文语言补丁。
 - 注入前端中文 UI 补丁。
 - 提供可配置的 Windows 启动脚本。
+- 保持 GPU 可用，不强制切换到 CPU。
 
 三、使用方法
 1. 先安装并确认 Fooocus 本体可以正常启动。

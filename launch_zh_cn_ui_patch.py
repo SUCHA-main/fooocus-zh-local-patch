@@ -1,6 +1,4 @@
 import os
-os.environ['FORCE_CPU'] = '1'
-import os
 import ssl
 import sys
 
