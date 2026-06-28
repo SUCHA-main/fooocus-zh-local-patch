@@ -20,6 +20,8 @@
 3. 将本仓库内的文件复制到 Fooocus 根目录，保持目录结构不变。
 4. 在 Fooocus 根目录运行 `start-gpu-zh-cn-local.bat`、`start-gpu-zh-cn-fixed.bat` 或 `start-gpu-zh-cn.bat`。
 
+如果原来的本地运行目录已经删除，想从零恢复一套 Fooocus 中文环境，请看 [重建文档](REBUILD_CN.md)。
+
 ## 启动脚本配置
 
 默认情况下，`.bat` 会把脚本所在目录作为 Fooocus 根目录，并优先使用 `venv\Scripts\python.exe`。如果需要自定义，可在运行前设置环境变量：
